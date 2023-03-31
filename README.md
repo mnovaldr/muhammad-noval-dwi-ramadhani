@@ -1,6 +1,6 @@
-# fundamentals
-
-A new Flutter project.
+# Muhmmad Noval Dwi Ramadhani
+Repository for Final Project of Fundamental Mobile Engineer SMK
+### Mini Project 1
 
 ## Getting Started
 
