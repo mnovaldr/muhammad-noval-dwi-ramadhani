@@ -26,6 +26,45 @@ class lamanUtama extends StatefulWidget {
 class _lamanUtamaState extends State<lamanUtama> {
   TextEditingController controller1 = TextEditingController();
   TextEditingController controller2 = TextEditingController();
+
+  double result = 0, angka1 = 0, angka2 = 0;
+
+  // Fungsi tambah
+  add() {
+    setState(() {
+      angka1 = double.parse(controller1.text);
+      angka2 = double.parse(controller2.text);
+      result = angka1 + angka2;
+    });
+  }
+
+  // Fungsi kurang
+  substract() {
+    setState(() {
+      angka1 = double.parse(controller1.text);
+      angka2 = double.parse(controller2.text);
+      result = angka1 - angka2;
+    });
+  }
+
+  // Fungsi kali
+  multiply() {
+    setState(() {
+      angka1 = double.parse(controller1.text);
+      angka2 = double.parse(controller2.text);
+      result = angka1 * angka2;
+    });
+  }
+
+  // Fungsi bagi
+  divide() {
+    setState(() {
+      angka1 = double.parse(controller1.text);
+      angka2 = double.parse(controller2.text);
+      result = angka1 / angka2;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +76,7 @@ class _lamanUtamaState extends State<lamanUtama> {
           Align(
             alignment: Alignment.centerLeft,
             child: Text(
-              "Result: ",
+              "Result: $result",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ),
@@ -73,22 +112,39 @@ class _lamanUtamaState extends State<lamanUtama> {
             height: 20,
           ),
           Align(
-                alignment: Alignment.center,
-                child: Column (
-                  children: [
-                    ElevatedButton(onPressed: (){}, child: Text('ADD')),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    ElevatedButton(onPressed: (){}, child: Text('SUBTRACT')),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    ElevatedButton(onPressed: (){}, child: Text('MULTIPLY')),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    ElevatedButton(onPressed: (){}, child: Text('DIVIDE'))],
+              alignment: Alignment.center,
+              child: Column(
+                children: [
+                  ElevatedButton(
+                      onPressed: () {
+                        add();
+                      },
+                      child: Text('ADD')),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  ElevatedButton(
+                      onPressed: () {
+                        substract();
+                      },
+                      child: Text('SUBTRACT')),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  ElevatedButton(
+                      onPressed: () {
+                        multiply();
+                      },
+                      child: Text('MULTIPLY')),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  ElevatedButton(
+                      onPressed: () {
+                        divide();
+                      },
+                      child: Text('DIVIDE'))
+                ],
               )),
         ],
       ),
