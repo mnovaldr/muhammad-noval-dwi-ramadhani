@@ -3,6 +3,8 @@ Repository for Final Project of Fundamental Mobile Engineer SMK
 ### Mini Project 1
 ![Screenshot 2023-03-31 202102](https://user-images.githubusercontent.com/91823182/229132909-0b8c0d19-20e4-4eba-b5e3-8c1fbdfe58a3.png)
 ### Mini Project 2
+![Screenshot 2023-04-03 152617](https://user-images.githubusercontent.com/91823182/229454100-183022e0-6f8a-42a2-99ed-7039c5df5c84.png)
+### Mini Project 
 
 ## Getting Started
 
