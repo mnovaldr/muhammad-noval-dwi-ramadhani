@@ -1,6 +1,8 @@
 # Muhmmad Noval Dwi Ramadhani
 Repository for Final Project of Fundamental Mobile Engineer SMK
 ### Mini Project 1
+![Screenshot 2023-03-31 202102](https://user-images.githubusercontent.com/91823182/229132909-0b8c0d19-20e4-4eba-b5e3-8c1fbdfe58a3.png)
+### Mini Project 2
 
 ## Getting Started
 
