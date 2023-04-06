@@ -75,9 +75,12 @@ class _lamanUtamaState extends State<lamanUtama> {
         children: [
           Align(
             alignment: Alignment.centerLeft,
-            child: Text(
-              "Result: $result",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            child: Padding(
+              padding: EdgeInsets.fromLTRB(20, 16, 0, 0),
+              child: Text(
+                "Result: $result",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
             ),
           ),
           SizedBox(
@@ -87,6 +90,7 @@ class _lamanUtamaState extends State<lamanUtama> {
             padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
             child: TextField(
               controller: controller1,
+              keyboardType: TextInputType.number,
               decoration: InputDecoration(
                 labelText: 'Enter first number',
                 filled: true,
@@ -101,6 +105,7 @@ class _lamanUtamaState extends State<lamanUtama> {
             padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
             child: TextField(
               controller: controller2,
+              keyboardType: TextInputType.number,
               decoration: InputDecoration(
                 labelText: 'Enter second number',
                 filled: true,
@@ -118,6 +123,8 @@ class _lamanUtamaState extends State<lamanUtama> {
                   ElevatedButton(
                       onPressed: () {
                         add();
+                        controller1.clear();
+                        controller2.clear();
                       },
                       child: Text('ADD')),
                   SizedBox(
@@ -126,6 +133,8 @@ class _lamanUtamaState extends State<lamanUtama> {
                   ElevatedButton(
                       onPressed: () {
                         substract();
+                        controller1.clear();
+                        controller2.clear();
                       },
                       child: Text('SUBTRACT')),
                   SizedBox(
@@ -134,6 +143,8 @@ class _lamanUtamaState extends State<lamanUtama> {
                   ElevatedButton(
                       onPressed: () {
                         multiply();
+                        controller1.clear();
+                        controller2.clear();
                       },
                       child: Text('MULTIPLY')),
                   SizedBox(
@@ -142,6 +153,8 @@ class _lamanUtamaState extends State<lamanUtama> {
                   ElevatedButton(
                       onPressed: () {
                         divide();
+                        controller1.clear();
+                        controller2.clear();
                       },
                       child: Text('DIVIDE'))
                 ],
