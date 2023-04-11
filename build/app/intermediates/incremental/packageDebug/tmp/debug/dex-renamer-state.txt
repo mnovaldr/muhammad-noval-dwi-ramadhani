@@ -1,0 +1,4 @@
+#Thu Apr 06 09:38:12 ICT 2023
+base.0=E\:\\TUGAS\\Sertifikasi\\Flutter\\fundamentals\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
